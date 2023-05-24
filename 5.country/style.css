@@ -1,0 +1,482 @@
+:root{
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+html{
+    font-size: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+    background-color: #f1f1f1;
+}
+
+
+/* all in one code */
+h2{
+    font-size:1.15rem;
+    padding: 3rem 0 1rem 0;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* navigation */
+nav{
+    width: 100%;
+    background-color:black;
+    font-weight: 200;
+    position:sticky;
+    left: 0;
+    top:0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0.6rem 5%;
+}
+nav span{
+    display: inline-block;
+    background-color:#f1f1f1;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem;
+    font-size:1.25rem;
+    color: #111;
+}
+.container0{
+width: 80%;
+height: 100%;
+padding-top: 1rem;
+position: fixed;
+top: 3.3rem;
+left:-5000px;
+background-color: white;
+transition:1s;
+}
+.container0 .profile{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    justify-items: start;
+    align-items: center;
+}
+.container0 .profile span:nth-child(3)
+{
+    font-weight: bold;
+    color: #616161;
+}
+.container0 p{
+    padding: 2rem 0 1rem 1rem;
+}
+.container0>span{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+.container0>span:hover{
+    background-color: #ccc;
+    color: black;
+}
+.profile img{
+    width: 75%;
+    height: auto;
+    border-radius: 100%;
+}
+/*container*/
+.container{
+    width: 84%;
+    background-color: #f1f1f1;
+}
+
+
+/*dash board*/
+.myDashboard{
+  display: flex;
+  flex-direction: column;
+  padding:2rem 0 1rem 0;
+}
+.myDashboard h1{
+    font-size: 1.25rem;
+    padding: 0.6rem 0;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.myDashboard div p{
+    font-size: 1.25rem;
+    color: white;
+}
+.myDashboard div p:nth-child(1){
+text-align: right;
+padding:1rem 0;
+text-align: right;
+padding-right: 5%;
+}
+.myDashboard div p:nth-child(2){
+    padding:1rem 0;
+    text-align: left;
+    padding-left: 5%;
+}
+.myDashboard  .red{
+    background-color: #f44336;
+}
+.myDashboard .blue{
+    background-color: #2196F3;
+}
+.myDashboard .browngreen{
+    background-color: #009688;
+}
+.myDashboard .orange{
+    background-color: #ff9800;
+}
+
+
+/*regions*/
+
+.regions img{
+    width: 100%;
+    height: auto;
+}
+
+/*feeds*/
+table{
+    width: 100%;
+    box-shadow: 0px 0px 4px 4px #585757;
+}
+table, tr, th{
+border-collapse: collapse;
+font-weight: 400;
+}
+.feeds table tr:nth-child(odd){
+    background-color:#fff;
+}
+
+.feeds table tr th:nth-child(1){
+    text-align: left;
+    padding:0.6rem;
+}
+.feeds table tr th:nth-child(2){
+    font-style: italic;
+}
+
+
+/*general status*/
+.generalstatus div:nth-child(even){
+    padding: 1rem 0;
+}
+.generalstatus .twofive{
+    padding:0.5rem 0 0.5rem 7%;
+    background:linear-gradient(to right,#4CAF50 0 25%,#9e9e9e 25% 75%);
+    color:white;
+}
+.generalstatus .fivezero{
+    padding:0.5rem 0 0.5rem 21%;
+    background:linear-gradient(to right,#ff9800 0 50%,#9e9e9e 50% 100%);
+}
+.generalstatus .sevenfive{
+    padding:0.5rem 0 0.5rem 33%;
+    background:linear-gradient(to right,#f44336 0 75%,#9e9e9e 75% 100%);
+    color:white;
+}
+
+
+/* country */
+.countries table{
+    border: 0.25px solid #dbd8d8;
+}
+.countries table tr:nth-child(odd){
+    background-color:#fff;
+}
+.countries table tr th:nth-child(1){
+    text-align: left;
+    padding:0.6rem;
+}
+.countries table tr th:nth-child(2){
+    font-style: italic;
+}
+.countries table tr:hover{
+    background-color: #a7a4a4;
+    color: white;
+}
+.countries button
+{
+    margin-top: 1.5rem;
+    width: 40%;
+    padding: 0.5rem 0;
+    background-color: #585757;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+/*recent users*/
+.recentUsers div img{
+    width: 10%;
+    border-radius: 100%;
+    height: auto;
+    margin: 0 1rem;
+}
+.recentUsers div{
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0.3rem 0;
+    background-color: white;
+    border-bottom: 1px solid #9e9e9e;
+    display: flex;
+    align-items: center;
+    box-shadow:0px 0px 4px 4px #9e9e9e;
+    margin: 4px 0;
+}
+
+
+/*recent comment*/
+.recentComments div img{
+width: 25%;
+height:auto;
+border-radius: 100%;
+margin-top: 1rem;
+
+}
+.recentComments>div{
+    margin: 0 0 2rem 0;
+    border-top: 1px solid #585757;
+}
+.recentComments div p:nth-child(1){
+    font-size: 1.25rem;  
+}
+.recentComments div p:nth-child(2){
+    font-size: 1rem;
+    margin-top: 1rem; 
+}
+.recentComments div p span{
+    margin:0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9e9e9e;
+}
+
+
+/* three */
+.three{
+    width: 100%;
+    background-color: #616161;
+    color: #fff;
+    padding: 1rem 8%;
+}
+.three .green{
+border-bottom: 5px solid #4CAF50;
+}
+.three .red{
+border-bottom:5px solid #f44336;
+}
+.three .orange{
+border-bottom:5px solid #ff9800;
+}
+.three h2{
+    padding:1.5rem 0 5px 0;
+}
+.three p{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    padding:0 8%;
+    background-color: #f1f1f1;
+}
+footer h1{
+width: 100%;
+font-size: 1.3rem;
+font-weight: 400;
+text-align: left;
+margin: 2rem 0;
+}
+footer p{
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+footer a{
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration:5px #4CAF50 underline;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+/* for 600px */
+@media screen and (min-width:600px)
+{
+html{
+    font-size: 100%;
+}
+.container{
+    width: 95%;
+}
+.myDashboard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 3rem 1fr;
+    gap: 1rem;
+}
+.myDashboard div{
+    padding: 0.8rem 0;
+}
+.myDashboard h1{
+    grid-column: 1/6;
+}
+.myDashboard .red{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    
+}
+.myDashboard .blue{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.myDashboard .browngreen{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.myDashboard .orange{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.regionsandfeeds{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-row: 1fr;
+    column-gap: 1rem;
+}
+table{
+    box-shadow: none;
+}
+.countries button{
+width: 25%;
+}
+.recentUsers div img{
+    width: 6%;
+}
+.recentComments>div{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    column-gap: 1rem;
+    justify-items:flex-start;
+    align-items:flex-start;
+    border-top: none;
+}
+.recentComments div div{
+    padding-top: 1rem;
+}
+.recentComments div img{
+width: 70%;
+}
+.three{
+    padding:2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+}
+
+
+/* for 1000px*/
+@media screen and (min-width:1000px)
+{
+    html{
+        font-size: 125%;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+    }
+    nav{
+        grid-column: 1/3;
+    }
+    nav span:first-child{
+        display: none;
+    }
+    .container{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .myDashboard div{
+        padding: 0rem 0;
+    }
+    .container0{
+        position: fixed;
+        width: 20%;
+        left: 0;
+    }
+    
+    .three{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    footer{
+        grid-column:2/3;
+        grid-row: 4/5;
+    }
+    /* profile */
+   
+    .container{
+        padding-left: 2%;
+    }
+    .container0 .profile{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .profile{
+        border-bottom: 1px solid #616161;
+        padding-bottom: 1rem;
+    }
+    .profile img{
+        width:70%;
+        height: auto;
+        border-radius: 100%;
+    }
+    .profile span:nth-child(3)
+    {
+        font-weight: bold;
+        color: #9e9e9e;
+    }
+    .container0 p{
+        padding:2rem 0 0.5rem 1rem;
+        font-size: 1.3rem;
+    }
+    .container0>span{
+        display: block;
+        width: 100%;
+        padding:0.5rem 0 0.5rem 1rem 
+    }
+    .container0>span:hover{
+        background-color: #ccc;
+        color: black;
+    }
+    .recentUsers div img{
+        width: 4%;
+    }
+    .recentComments div{
+        justify-items: flex-start;
+        align-items: center;
+    }
+    .recentComments div img{
+        width: 40%;
+    }
+    footer{
+        padding-bottom: 3rem;
+    }
+
+}
